@@ -20,12 +20,18 @@
     "react": "^19",
     "react-dom": "^19",
     "tailwindcss": "^4.1.11",
+    "leva": "latest",
+    "r3f-perf": "latest",
+    "three": "latest",
+    "@react-three/drei": "latest",
+    "@react-three/fiber": "latest",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.180.0",
     "eslint": "^9.32.0",
     "eslint-config-next": "^15",
     "prettier": "^3.6.2",

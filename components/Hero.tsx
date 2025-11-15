@@ -5,6 +5,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import heroImage from '@/images/kelussia-hero2.jpeg'
 import Image from 'next/image'
+import { GL } from "./gl";
 
 const navigation = [
   { name: 'About', href: '#features' },
@@ -16,9 +17,13 @@ const navigation = [
 
 export function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [hovering, setHovering] = useState(false);
 
   return (
-    <div className="bg-black">
+    <div className="relative bg-black min-h-screen">
+      <div className="absolute inset-0 z-0">
+        <GL hovering={hovering} />
+      </div>
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="mx-auto max-w-[80vw] flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
@@ -102,7 +107,7 @@ export function Hero() {
         </Dialog>
       </header>
 
-      <div className="relative isolate pt-14">
+      <div className="relative isolate pt-14 z-10">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -128,7 +133,9 @@ export function Hero() {
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
+                    className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 transition-all"
+                    onMouseEnter={() => setHovering(true)}
+                    onMouseLeave={() => setHovering(false)}
                   >
                     Partner With Us
                   </a>
