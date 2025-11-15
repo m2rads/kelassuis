@@ -21,6 +21,9 @@ const incentives = [
   },
 ]
 
+import secondaryFeaturesImage from '@/images/secondaryfeature.jpeg'
+import Image from 'next/image'
+
 export function SecondaryFeatures() {
   return (
     <div className="bg-black">
@@ -35,10 +38,12 @@ export function SecondaryFeatures() {
                 Add a globally rare ingredient that commands attention, storytelling, and premium pricing. Your competitors source standard ingredients. You source geological art.
               </p>
             </div>
-            <img
+            <Image
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/ecommerce-images/incentives-07-hero.jpg"
-              className="aspect-3/2 w-full rounded-lg bg-white/5 object-cover"
+              src={secondaryFeaturesImage}
+              width={800}
+              height={800}
+              className="w-full max-h-[600px] rounded-lg bg-white/5 object-cover"
             />
           </div>
           <div className="bg-black">
