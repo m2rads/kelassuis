@@ -13,27 +13,27 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Provenance-Driven',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      'Every grain is traceable to its source, ensuring authenticity and professional confidence in your culinary creations.',
     image: screenshotPayroll,
   },
   {
-    title: 'Claim expenses',
+    title: 'B2B Exclusivity',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      'We partner only with gourmet brands, Michelin-caliber kitchens, and luxury distributors who understand the value of rarity.',
     image: screenshotExpenses,
   },
   {
-    title: 'VAT handling',
+    title: 'Story as Strategy',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      'This salt carries geological history, regional identity, and culinary prestige—assets that elevate your brand positioning.',
     image: screenshotVatReturns,
   },
   {
-    title: 'Reporting',
+    title: 'Professional Grade',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      'Hand-selected, cleaned, and graded for consistency in commercial kitchens. Reliable supply for operational excellence.',
     image: screenshotReporting,
   },
 ]
@@ -67,11 +67,10 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            The Blue That Defines Rarity
           </h2>
           <p className="mt-6 text-lg tracking-tight text-white/80">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Persian Blue Salt is not merely an ingredient—it is a geological marvel, a culinary statement, and a brand differentiator. Hand-mined from ancient salt deposits, its natural blue crystalline structure creates visual drama and flavor complexity.
           </p>
         </div>
         <TabGroup

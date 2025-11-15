@@ -3,53 +3,53 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'What makes Persian Blue Salt unique?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'Persian Blue Salt is a geological rarity with natural blue crystalline structure. No dyes or additives—just pure, hand-mined mineral complexity that creates visual drama and culinary distinction.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'Who are your ideal partners?',
+      answer: 'We partner with Michelin-starred restaurants, gourmet product brands, luxury distributors, and culinary innovators who value authenticity, rarity, and storytelling in their offerings.',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'What is the minimum order quantity?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        'Minimum orders vary based on packaging format and destination. Contact us to discuss your volume needs and we\'ll create a custom solution that fits your operational requirements.',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'How do you ensure quality and authenticity?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        'Every batch is hand-selected from verified ancient salt deposits. We maintain full traceability from source to delivery, with complete documentation and quality assurance protocols.',
     },
     {
       question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+        'Can you provide custom packaging or white-label solutions?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        'Yes. We offer bulk professional formats, custom packaging, white-label options, and co-branding opportunities designed for brand integration and operational efficiency.',
     },
     {
       question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+        'What is the delivery timeline for new partnerships?',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'Initial consultation to first delivery typically ranges from 2-4 weeks, depending on volume, packaging requirements, and destination. We prioritize reliability and documentation.',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'How is the flavor profile different from regular salt?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        'Persian Blue Salt offers mineral-rich complexity with subtle depth that enhances dishes without overpowering. The flavor is distinctive yet balanced—perfect for professional culinary applications.',
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question: 'Do you offer seasonal availability or limited runs?',
+      answer: 'As a naturally hand-mined product, availability can fluctuate. Partnership clients receive priority access and advance notice of seasonal trends and supply updates.',
     },
     {
-      question: 'I lost my password, how do I get into my account?',
+      question: 'How do I start a partnership inquiry?',
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        'Submit a partnership inquiry through our contact form with your company details, business type, and volume needs. We\'ll schedule a consultation to discuss your culinary vision and supply strategy.',
     },
   ],
 ]

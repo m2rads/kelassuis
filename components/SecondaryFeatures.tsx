@@ -1,22 +1,22 @@
 const incentives = [
   {
-    name: 'Free Shipping',
-    description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+    name: 'Competitive Differentiation',
+    description: 'Add a globally rare ingredient that signals commitment to quality and culinary innovation.',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-delivery-light.svg',
   },
   {
-    name: '24/7 Customer Support',
-    description: 'Our AI chat widget is powered by a naive series of if/else statements. Guaranteed to irritate.',
+    name: 'Brand Elevation',
+    description: 'Persian Blue Salt becomes a signature element in your brand identity and storytelling.',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-chat-light.svg',
   },
   {
-    name: 'Fast Shopping Cart',
-    description: "Look how fast that cart is going. What does this mean for the actual experience? I don't know.",
+    name: 'Visual Impact',
+    description: 'Creates Instagram-worthy plating moments and elevates brand presentation naturally.',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-fast-checkout-light.svg',
   },
   {
-    name: 'Gift Cards',
-    description: "Buy them for your friends, especially if they don't like our store. Free money for us, it's great.",
+    name: 'Professional Assurance',
+    description: 'Fully documented sourcing and consistent supply chain. Traceable provenance you can trust.',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-gift-card-light.svg',
   },
 ]
@@ -29,12 +29,10 @@ export function SecondaryFeatures() {
           <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
             <div>
               <h2 className="text-4xl font-bold tracking-tight text-white">
-                We built our business on great customer service
+                Transform Your Culinary Offering
               </h2>
               <p className="mt-4 text-white/80">
-                At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
-                caring about that. Our new strategy is to write a bunch of things that look really good in the
-                headlines, then clarify in the small print but hope people don't actually read it.
+                Add a globally rare ingredient that commands attention, storytelling, and premium pricing. Your competitors source standard ingredients. You source geological art.
               </p>
             </div>
             <img

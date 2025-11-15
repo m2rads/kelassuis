@@ -9,7 +9,11 @@ export function Footer() {
     <footer className="bg-black">
       <Container>
         <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
+          <img
+            alt=""
+            src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=400"
+            className="h-8 w-auto mx-auto"
+          />
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
               <NavLink href="#features">Features</NavLink>
@@ -40,8 +44,8 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-white/60 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} TaxPal. All rights
-            reserved.
+            Kelussia | Persian Blue Salt Partnerships<br />
+            Rare Ingredients. Elevated Brands. Culinary Excellence.
           </p>
         </div>
       </Container>

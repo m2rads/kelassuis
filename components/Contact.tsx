@@ -43,11 +43,10 @@ export function Contact() {
               </div>
             </div>
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
-              Get in touch
+              Become a Kelussia Partner
             </h2>
             <p className="mt-6 text-lg/8 text-white/80">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt
-              integer elementum id sem. Arcu sed malesuada et magna.
+              Elevate your culinary creations with Persian Blue Salt—the ingredient that tells stories before the first taste. Let's discuss how we can support your brand excellence.
             </p>
             <dl className="mt-10 space-y-4 text-base/7 text-white/80">
               <div className="flex gap-x-4">
@@ -56,9 +55,9 @@ export function Contact() {
                   <BuildingOffice2Icon aria-hidden="true" className="h-7 w-6 text-white/60" />
                 </dt>
                 <dd>
-                  545 Mavis Island
+                  Partnership Inquiries
                   <br />
-                  Chicago, IL 99191
+                  Global Distribution
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -68,7 +67,7 @@ export function Contact() {
                 </dt>
                 <dd>
                   <a href="tel:+1 (555) 234-5678" className="hover:text-white">
-                    +1 (555) 234-5678
+                    Available upon inquiry
                   </a>
                 </dd>
               </div>
@@ -78,8 +77,8 @@ export function Contact() {
                   <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-white/60" />
                 </dt>
                 <dd>
-                  <a href="mailto:hello@example.com" className="hover:text-white">
-                    hello@example.com
+                  <a href="mailto:partnerships@kelussia.com" className="hover:text-white">
+                    partnerships@kelussia.com
                   </a>
                 </dd>
               </div>
@@ -91,7 +90,7 @@ export function Contact() {
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label htmlFor="first-name" className="block text-sm/6 font-semibold text-white">
-                  First name
+                  Contact Name
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -105,7 +104,7 @@ export function Contact() {
               </div>
               <div>
                 <label htmlFor="last-name" className="block text-sm/6 font-semibold text-white">
-                  Last name
+                  Company/Brand Name
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -133,7 +132,7 @@ export function Contact() {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="phone-number" className="block text-sm/6 font-semibold text-white">
-                  Phone number
+                  Business Type
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -147,7 +146,7 @@ export function Contact() {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="message" className="block text-sm/6 font-semibold text-white">
-                  Message
+                  Partnership Details
                 </label>
                 <div className="mt-2.5">
                   <textarea
@@ -165,7 +164,7 @@ export function Contact() {
                 type="submit"
                 className="rounded-md bg-blue-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
               >
-                Send message
+                Submit Inquiry
               </button>
             </div>
           </div>

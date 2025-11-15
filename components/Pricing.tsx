@@ -123,56 +123,55 @@ export function Pricing() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute top-1/2 left-0 h-[1em] w-full fill-blue-900" />
-              <span className="relative">Simple pricing,</span>
+              <span className="relative">Building</span>
             </span>{' '}
-            for everyone.
+            Long-Term Partnerships
           </h2>
           <p className="mt-4 text-lg text-white/60">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
+            From consultation to delivery, we handle complexity so you can focus on culinary creation and brand excellence.
           </p>
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
           <Plan
-            name="Starter"
-            price="$9"
-            description="Good for anyone who is self-employed and just getting started."
+            name="Consultation"
+            price="Step 1"
+            description="We learn your culinary vision and operational needs."
             href="/register"
             features={[
-              'Send 10 quotes and invoices',
-              'Connect up to 2 bank accounts',
-              'Track up to 15 expenses per month',
-              'Manual payroll support',
-              'Export up to 3 reports',
+              'Brand positioning analysis',
+              'Volume requirement assessment',
+              'Custom sourcing strategy',
+              'Integration planning',
+              'Partnership roadmap',
             ]}
           />
           <Plan
             featured
-            name="Small business"
-            price="$15"
-            description="Perfect for small / medium sized businesses."
+            name="Custom Sourcing"
+            price="Step 2"
+            description="Tailored supply solutions for your brand."
             href="/register"
             features={[
-              'Send 25 quotes and invoices',
-              'Connect up to 5 bank accounts',
-              'Track up to 50 expenses per month',
-              'Automated payroll support',
-              'Export up to 12 reports',
-              'Bulk reconcile transactions',
-              'Track in multiple currencies',
+              'Bulk professional packaging',
+              'White-label options available',
+              'Co-branding opportunities',
+              'Custom volume solutions',
+              'Quality assurance protocols',
+              'Documentation complete',
+              'Flexible delivery scheduling',
             ]}
           />
           <Plan
-            name="Enterprise"
-            price="$39"
-            description="For even the biggest enterprise companies."
+            name="Partnership"
+            price="Step 3"
+            description="Ongoing collaboration for long-term success."
             href="/register"
             features={[
-              'Send unlimited quotes and invoices',
-              'Connect up to 15 bank accounts',
-              'Track up to 200 expenses per month',
-              'Automated payroll support',
-              'Export up to 25 reports, including TPS',
+              'Traceable supply chain',
+              'Timely delivery management',
+              'Market insights provided',
+              'Seasonal availability updates',
+              'Partnership optimization',
             ]}
           />
         </div>
