@@ -20,7 +20,7 @@ export function Hero() {
   return (
     <div className="bg-black">
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+        <nav aria-label="Global" className="mx-auto max-w-[80vw] flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Kelussia</span>
@@ -117,29 +117,33 @@ export function Hero() {
         </div>
         <div className="py-24 sm:py-32 lg:pb-40">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
-                Rarity Reimagined. The Story Lives in Blue.
-              </h1>
-              <p className="mt-8 text-lg font-medium text-pretty text-white/80 sm:text-xl/8">
-                Kelussia presents Persian Blue Salt—hand-mined, naturally vibrant, and culinary rare. We partner with professional kitchens and gourmet brands to deliver extraordinary ingredients with unmatched provenance and visual impact.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
-                >
-                  Partner With Us
-                </a>
+            <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2 lg:items-start">
+              <div className="mx-auto max-w-2xl lg:mx-0">
+                <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+                  Rarity Reimagined. The Story Lives in Blue.
+                </h1>
+                <p className="mt-8 text-lg font-medium text-pretty text-white/80 sm:text-xl/8">
+                  Kelussia presents Persian Blue Salt—hand-mined, naturally vibrant, and culinary rare. We partner with professional kitchens and gourmet brands to deliver extraordinary ingredients with unmatched provenance and visual impact.
+                </p>
+                <div className="mt-10 flex items-center gap-x-6">
+                  <a
+                    href="#"
+                    className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
+                  >
+                    Partner With Us
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-center lg:justify-end">
+                <Image
+                  alt="Persian Blue Salt"
+                  src={heroImage}
+                  width={500}
+                  height={500}
+                  className="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 object-cover aspect-square"
+                />
               </div>
             </div>
-            <Image
-              alt="App screenshot"
-              src={heroImage}
-              width={700}
-              height={500}
-              className="mx-auto mt-16 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24"
-            />
           </div>
         </div>
         <div
@@ -155,6 +159,7 @@ export function Hero() {
           />
         </div>
       </div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
     </div>
   )
 }

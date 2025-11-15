@@ -1,22 +1,22 @@
 const incentives = [
   {
-    name: 'Competitive Differentiation',
-    description: 'Add a globally rare ingredient that signals commitment to quality and culinary innovation.',
+    name: 'Free Shipping',
+    description: 'Complimentary shipping on all partnership orders. Fast, reliable delivery to your location.',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-delivery-light.svg',
   },
   {
-    name: 'Brand Elevation',
-    description: 'Persian Blue Salt becomes a signature element in your brand identity and storytelling.',
+    name: '24/7 Customer Service',
+    description: 'Dedicated partnership support available around the clock for all your inquiries and needs.',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-chat-light.svg',
   },
   {
-    name: 'Visual Impact',
-    description: 'Creates Instagram-worthy plating moments and elevates brand presentation naturally.',
+    name: 'Fast Shipping',
+    description: 'Expedited fulfillment and processing to ensure your Persian Blue Salt arrives when you need it.',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-fast-checkout-light.svg',
   },
   {
-    name: 'Professional Assurance',
-    description: 'Fully documented sourcing and consistent supply chain. Traceable provenance you can trust.',
+    name: 'Amazing Deals on Bulk Purchase',
+    description: 'Exclusive volume pricing for professional kitchens and brands. Better rates as you scale.',
     imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-gift-card-light.svg',
   },
 ]
@@ -26,29 +26,12 @@ import Image from 'next/image'
 
 export function SecondaryFeatures() {
   return (
-    <div className="bg-black">
+    <div className="relative bg-black">
       <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
-          <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
-            <div>
-              <h2 className="text-4xl font-bold tracking-tight text-white">
-                Transform Your Culinary Offering
-              </h2>
-              <p className="mt-4 text-white/80">
-                Add a globally rare ingredient that commands attention, storytelling, and premium pricing. Your competitors source standard ingredients. You source geological art.
-              </p>
-            </div>
-            <Image
-              alt=""
-              src={secondaryFeaturesImage}
-              width={800}
-              height={800}
-              className="w-full max-h-[600px] rounded-lg bg-white/5 object-cover"
-            />
-          </div>
           <div className="bg-black">
-            <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
-              <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
+            <div className="mx-auto max-w-2xl px-4 pb-24 sm:px-6 lg:max-w-7xl lg:px-8">
+              <div className="grid grid-cols-1 gap-y-16 sm:grid-cols-2 sm:gap-x-10 lg:grid-cols-4 lg:gap-x-12">
                 {incentives.map((incentive) => (
                   <div key={incentive.name}>
                     <img alt="" src={incentive.imageSrc} className="h-24 w-auto" />
@@ -59,8 +42,27 @@ export function SecondaryFeatures() {
               </div>
             </div>
           </div>
+          <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
+            <Image
+              alt=""
+              src={secondaryFeaturesImage}
+              width={800}
+              height={800}
+              className="w-full max-h-[600px] rounded-lg bg-white/5 object-cover"
+            />
+            <div>
+              <h2 className="text-4xl font-bold tracking-tight text-white">
+                Transform Your Culinary Offering
+              </h2>
+              <p className="mt-4 text-white/80">
+                Add a globally rare ingredient that commands attention, storytelling, and premium pricing. Your competitors source standard ingredients. You source geological art.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
     </div>
   )
 }

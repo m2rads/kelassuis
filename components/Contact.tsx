@@ -3,44 +3,26 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/2
 export function Contact() {
   return (
     <div className="relative isolate bg-black">
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent pointer-events-none z-10"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none z-10"></div>
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-white/5 ring-1 ring-white/10 lg:w-1/2">
-              <svg
-                aria-hidden="true"
-                className="absolute inset-0 size-full mask-[radial-gradient(100%_100%_at_top_right,white,transparent)] stroke-white/10"
-              >
-                <defs>
-                  <pattern
-                    x="100%"
-                    y={-1}
-                    id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-                    width={200}
-                    height={200}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <path d="M130 200V.5M.5 .5H200" fill="none" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" strokeWidth={0} className="fill-black" />
-                <svg x="100%" y={-1} className="overflow-visible fill-white/5">
-                  <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
-                </svg>
-                <rect fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" width="100%" height="100%" strokeWidth={0} />
-              </svg>
+            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden lg:w-1/2">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-950/30 via-black to-black"></div>
               <div
                 aria-hidden="true"
-                className="absolute top-[calc(100%-13rem)] -left-56 transform-gpu blur-3xl lg:top-[calc(50%-7rem)] lg:left-[max(-14rem,calc(100%-59rem))]"
+                className="absolute top-[calc(50%-7rem)] -left-56 transform-gpu blur-3xl"
               >
                 <div
                   style={{
                     clipPath:
                       'polygon(74.1% 56.1%, 100% 38.6%, 97.5% 73.3%, 85.5% 100%, 80.7% 98.2%, 72.5% 67.7%, 60.2% 37.8%, 52.4% 32.2%, 47.5% 41.9%, 45.2% 65.8%, 27.5% 23.5%, 0.1% 35.4%, 17.9% 0.1%, 27.6% 23.5%, 76.1% 2.6%, 74.1% 56.1%)',
                   }}
-                  className="aspect-1155/678 w-288.75 bg-linear-to-br from-[#1e3a8a] to-[#3b82f6] opacity-20"
+                  className="aspect-1155/678 w-288.75 bg-gradient-to-br from-blue-900/30 to-blue-950/20 opacity-50"
                 />
               </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black"></div>
             </div>
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
               Become a Kelussia Partner

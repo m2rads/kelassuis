@@ -62,6 +62,8 @@ export function Faqs() {
       className="relative overflow-hidden bg-black py-20 sm:py-32"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-blue-950/20 via-black to-blue-900/10" />
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent pointer-events-none z-10"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none z-10"></div>
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
