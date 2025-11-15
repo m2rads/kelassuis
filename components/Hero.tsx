@@ -3,6 +3,8 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import heroImage from '@/images/kelussia-hero2.jpeg'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'About', href: '#features' },
@@ -10,6 +12,7 @@ const navigation = [
   { name: 'Partnership', href: '#pricing' },
   { name: 'FAQ', href: '#faq' },
 ]
+
 
 export function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -130,13 +133,12 @@ export function Hero() {
                 </a>
               </div>
             </div>
-
-            <img
+            <Image
               alt="App screenshot"
-              src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
-              width={2432}
-              height={1442}
-              className="mt-16 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24"
+              src={heroImage}
+              width={700}
+              height={500}
+              className="mx-auto mt-16 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24"
             />
           </div>
         </div>
