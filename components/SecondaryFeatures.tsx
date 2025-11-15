@@ -35,8 +35,8 @@ export function SecondaryFeatures() {
                 {incentives.map((incentive) => (
                   <div key={incentive.name}>
                     <img alt="" src={incentive.imageSrc} className="h-24 w-auto" />
-                    <h3 className="mt-6 text-sm font-medium text-white">{incentive.name}</h3>
-                    <p className="mt-2 text-sm text-white/60">{incentive.description}</p>
+                    <h3 className="mt-6 text-sm font-mono font-medium text-white">{incentive.name}</h3>
+                    <p className="mt-2 text-sm font-mono text-white/60">{incentive.description}</p>
                   </div>
                 ))}
               </div>
@@ -51,10 +51,10 @@ export function SecondaryFeatures() {
               className="w-full max-h-[600px] rounded-lg bg-white/5 object-cover"
             />
             <div>
-              <h2 className="text-4xl font-bold tracking-tight text-white">
+              <h2 className="text-4xl font-sentient tracking-tight text-white">
                 Transform Your Culinary Offering
               </h2>
-              <p className="mt-4 text-white/80">
+              <p className="mt-4 font-mono text-sm sm:text-base text-white/60">
                 Add a globally rare ingredient that commands attention, storytelling, and premium pricing. Your competitors source standard ingredients. You source geological art.
               </p>
             </div>

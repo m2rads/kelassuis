@@ -24,13 +24,13 @@ export function Contact() {
               </div>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black"></div>
             </div>
-            <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+            <h2 className="text-4xl font-sentient tracking-tight text-pretty text-white sm:text-5xl">
               Become a Kelussia Partner
             </h2>
-            <p className="mt-6 text-lg/8 text-white/80">
+            <p className="mt-6 font-mono text-sm sm:text-base text-white/60">
               Elevate your culinary creations with Persian Blue Salt—the ingredient that tells stories before the first taste. Let's discuss how we can support your brand excellence.
             </p>
-            <dl className="mt-10 space-y-4 text-base/7 text-white/80">
+            <dl className="mt-10 space-y-4 font-mono text-base/7 text-white/80">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
@@ -71,7 +71,7 @@ export function Contact() {
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
-                <label htmlFor="first-name" className="block text-sm/6 font-semibold text-white">
+                <label htmlFor="first-name" className="block text-sm/6 font-mono font-semibold text-white">
                   Contact Name
                 </label>
                 <div className="mt-2.5">
@@ -80,12 +80,12 @@ export function Contact() {
                     name="first-name"
                     type="text"
                     autoComplete="given-name"
-                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white/40 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 font-mono text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white/40 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
                   />
                 </div>
               </div>
               <div>
-                <label htmlFor="last-name" className="block text-sm/6 font-semibold text-white">
+                <label htmlFor="last-name" className="block text-sm/6 font-mono font-semibold text-white">
                   Company/Brand Name
                 </label>
                 <div className="mt-2.5">
@@ -94,12 +94,12 @@ export function Contact() {
                     name="last-name"
                     type="text"
                     autoComplete="family-name"
-                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white/40 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 font-mono text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white/40 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
                   />
                 </div>
               </div>
               <div className="sm:col-span-2">
-                <label htmlFor="email" className="block text-sm/6 font-semibold text-white">
+                <label htmlFor="email" className="block text-sm/6 font-mono font-semibold text-white">
                   Email
                 </label>
                 <div className="mt-2.5">
@@ -108,12 +108,12 @@ export function Contact() {
                     name="email"
                     type="email"
                     autoComplete="email"
-                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white/40 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 font-mono text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white/40 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
                   />
                 </div>
               </div>
               <div className="sm:col-span-2">
-                <label htmlFor="phone-number" className="block text-sm/6 font-semibold text-white">
+                <label htmlFor="phone-number" className="block text-sm/6 font-mono font-semibold text-white">
                   Business Type
                 </label>
                 <div className="mt-2.5">
@@ -122,12 +122,12 @@ export function Contact() {
                     name="phone-number"
                     type="tel"
                     autoComplete="tel"
-                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white/40 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 font-mono text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white/40 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
                   />
                 </div>
               </div>
               <div className="sm:col-span-2">
-                <label htmlFor="message" className="block text-sm/6 font-semibold text-white">
+                <label htmlFor="message" className="block text-sm/6 font-mono font-semibold text-white">
                   Partnership Details
                 </label>
                 <div className="mt-2.5">
@@ -135,7 +135,7 @@ export function Contact() {
                     id="message"
                     name="message"
                     rows={4}
-                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white/40 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 font-mono text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-white/40 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
                     defaultValue={''}
                   />
                 </div>
@@ -144,7 +144,7 @@ export function Contact() {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-blue-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
+                className="rounded-md bg-blue-900 px-3.5 py-2.5 font-mono text-center text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
               >
                 Submit Inquiry
               </button>

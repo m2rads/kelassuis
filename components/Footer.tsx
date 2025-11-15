@@ -44,7 +44,7 @@ export function Footer() {
               </svg>
             </Link>
           </div>
-          <p className="mt-6 text-sm text-white/60 sm:mt-0">
+          <p className="mt-6 font-mono text-sm text-white/60 sm:mt-0">
             Kelussia | Persian Blue Salt Partnerships<br />
             Rare Ingredients. Elevated Brands. Culinary Excellence.
           </p>

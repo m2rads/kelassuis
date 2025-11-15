@@ -68,13 +68,13 @@ export function Faqs() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="faq-title"
-            className="font-display text-3xl tracking-tight text-white sm:text-4xl"
+            className="font-sentient text-3xl tracking-tight text-white sm:text-4xl"
           >
             Frequently asked questions
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-white/80">
-            If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
+          <p className="mt-4 font-mono text-sm sm:text-base text-white/60">
+            If you can't find what you're looking for, email our support team
+            and if you're lucky someone will get back to you.
           </p>
         </div>
         <ul
@@ -86,10 +86,10 @@ export function Faqs() {
               <ul role="list" className="flex flex-col gap-y-8">
                 {column.map((faq, faqIndex) => (
                   <li key={faqIndex}>
-                    <h3 className="font-display text-lg/7 text-white">
+                    <h3 className="font-sentient text-lg/7 text-white">
                       {faq.question}
                     </h3>
-                    <p className="mt-4 text-sm text-white/60">{faq.answer}</p>
+                    <p className="mt-4 font-mono text-sm text-white/60">{faq.answer}</p>
                   </li>
                 ))}
               </ul>

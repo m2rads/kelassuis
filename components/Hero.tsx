@@ -50,7 +50,7 @@ export function Hero() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-white">
+              <a key={item.name} href={item.href} className="text-sm/6 font-mono font-semibold text-white">
                 {item.name}
               </a>
             ))}
@@ -97,7 +97,7 @@ export function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-mono font-semibold text-white hover:bg-white/5"
                     >
                       {item.name}
                     </a>
@@ -139,10 +139,11 @@ export function Hero() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2 lg:items-start">
               <div className="mx-auto max-w-2xl lg:mx-0">
-                <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
-                  Rarity Reimagined. The Story Lives in Blue.
+                <h1 className="text-5xl sm:text-6xl md:text-7xl font-sentient text-white">
+                  Rarity Reimagined. <br />
+                  <i className="font-light">The Story Lives in Blue.</i>
                 </h1>
-                <p className="mt-8 text-lg font-medium text-pretty text-white/80 sm:text-xl/8">
+                <p className="mt-8 font-mono text-sm sm:text-base text-white/60 text-balance">
                   Kelussia presents Persian Blue Salt—hand-mined, naturally vibrant, and culinary rare. We partner with professional kitchens and gourmet brands to deliver extraordinary ingredients with unmatched provenance and visual impact.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
