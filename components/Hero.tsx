@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
 import heroImage from '@/images/hero.png'
 import Image from 'next/image'
 import { GL } from "./gl";
@@ -56,9 +56,17 @@ export function Hero() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold text-white">
-              Contact us <span aria-hidden="true">&rarr;</span>
-            </a>
+            <Link href="/#contact" className="contents">
+              <Button
+                size="sm"
+                className="text-white border-blue-950"
+                onMouseEnter={() => setHovering(true)}
+                onMouseLeave={() => setHovering(false)}
+              >
+                <EnvelopeIcon className="size-4" />
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -96,12 +104,17 @@ export function Hero() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5"
-                  >
-                    Contact us
-                  </a>
+                  <Link href="/#contact" className="contents">
+                    <Button
+                      size="sm"
+                      className="text-white border-blue-950"
+                      onMouseEnter={() => setHovering(true)}
+                      onMouseLeave={() => setHovering(false)}
+                    >
+                      <EnvelopeIcon className="size-4" />
+                      Contact Us
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -135,21 +148,23 @@ export function Hero() {
                 <div className="mt-10 flex items-center gap-x-6">
                   <Link className="contents max-sm:hidden" href="/#contact">
                     <Button
-                      className="mt-14"
+                      className="mt-14 text-white border-blue-950"
                       onMouseEnter={() => setHovering(true)}
                       onMouseLeave={() => setHovering(false)}
                     >
-                      [Contact Us]
+                      <EnvelopeIcon className="size-4" />
+                      Contact Us
                     </Button>
                   </Link>
                   <Link className="contents sm:hidden" href="/#contact">
                     <Button
                       size="sm"
-                      className="mt-14"
+                      className="mt-14 text-white border-blue-950"
                       onMouseEnter={() => setHovering(true)}
                       onMouseLeave={() => setHovering(false)}
                     >
-                      [Contact Us]
+                      <EnvelopeIcon className="size-4" />
+                      Contact Us
                     </Button>
                   </Link>
                 </div>
