@@ -3,9 +3,11 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import heroImage from '@/images/kelussia-hero2.jpeg'
+import heroImage from '@/images/hero.png'
 import Image from 'next/image'
 import { GL } from "./gl";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 const navigation = [
   { name: 'About', href: '#features' },
@@ -131,23 +133,38 @@ export function Hero() {
                   Kelussia presents Persian Blue Salt—hand-mined, naturally vibrant, and culinary rare. We partner with professional kitchens and gourmet brands to deliver extraordinary ingredients with unmatched provenance and visual impact.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
-                  <a
-                    href="#"
-                    className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 transition-all"
-                    onMouseEnter={() => setHovering(true)}
-                    onMouseLeave={() => setHovering(false)}
-                  >
-                    Partner With Us
-                  </a>
+                  <Link className="contents max-sm:hidden" href="/#contact">
+                    <Button
+                      className="mt-14"
+                      onMouseEnter={() => setHovering(true)}
+                      onMouseLeave={() => setHovering(false)}
+                    >
+                      [Contact Us]
+                    </Button>
+                  </Link>
+                  <Link className="contents sm:hidden" href="/#contact">
+                    <Button
+                      size="sm"
+                      className="mt-14"
+                      onMouseEnter={() => setHovering(true)}
+                      onMouseLeave={() => setHovering(false)}
+                    >
+                      [Contact Us]
+                    </Button>
+                  </Link>
                 </div>
               </div>
-              <div className="flex justify-center lg:justify-end">
+              <div 
+                className="flex justify-center lg:justify-end hover:scale-105 transition-all duration-300"
+                onMouseEnter={() => setHovering(true)}
+                onMouseLeave={() => setHovering(false)}
+              >
                 <Image
                   alt="Persian Blue Salt"
                   src={heroImage}
                   width={500}
                   height={500}
-                  className="rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 object-cover aspect-square"
+                  className="rounded-xl bg-blue-900/5 shadow-2xl ring-1 ring-blue-900/10 object-cover aspect-square"
                 />
               </div>
             </div>
